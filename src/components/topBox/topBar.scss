@@ -1,0 +1,30 @@
+.topBox {
+    h1 {
+        margin-bottom: 20px;
+    }
+    .list {
+        .listItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            .listuser {
+                display: flex;
+                gap: 20px;
+                img {
+                    width: 40px;
+                    border-radius: 50%;
+                    height: 40px;
+                    object-fit: cover;
+                }
+                .userText {
+                    .username {
+                    }
+                    .email {
+                    }
+                }
+            }
+        }
+    }
+}
