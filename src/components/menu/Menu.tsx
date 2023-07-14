@@ -6,7 +6,7 @@ const Menu = () => {
     return (
         <div className='menu'>
             {
-                menu.map((item, idx) => {
+                menu.map((item) => {
                     return (
                         <div className="item">
                             <span className="title">{item.title}</span>

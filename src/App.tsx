@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/home/Home";
-import Users from "./pages/user/Users";
+import Users from "./pages/users/Users";
 import Products from "./pages/products/Products";
 import Navbar from "./components/navabar/Navbar";
 import Menu from "./components/menu/Menu";
@@ -17,6 +17,8 @@ import Login from "./pages/login/Login";
 
 import './styles/global.scss'
 import Footer from "./components/footer/Footer";
+import Product from "./pages/product/Product";
+import User from "./pages/user/user";
 function App() {
 
   const Layout = () => {
@@ -51,6 +53,14 @@ function App() {
         {
           path: '/products',
           element: <Products />
+        },
+        {
+          path: '/products/:id',
+          element: <Product />
+        },
+        {
+          path: '/user/:id',
+          element: <User />
         }
       ]
     },

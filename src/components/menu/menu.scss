@@ -1,23 +1,32 @@
-@import '../../styles//variables.scss';
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
 
-.menu{
-    .item{
+.menu {
+    .item {
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin-bottom: 10px;
-        .title{
+        .title {
             font-size: 12px;
             font-weight: 200;
             color: $soft-color;
+            @include lg {
+                display: none;
+            }
         }
-        .ListItem{
+        .ListItem {
             padding: 10px;
             display: flex;
             align-items: center;
             gap: 10px;
-            &:hover{
+            &:hover {
                 background-color: $soft-bg;
+            }
+            .ListItemTitle {
+                @include lg {
+                    display: none;
+                }
             }
         }
     }
